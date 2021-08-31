@@ -1,0 +1,16 @@
+diff --git a/node_modules/lodash/lodash.js b/node_modules/lodash/lodash.js
+index 4131e93..38f08b9 100644
+--- a/node_modules/lodash/lodash.js
++++ b/node_modules/lodash/lodash.js
+@@ -12069,8 +12069,9 @@
+      * // => false
+      */
+     function isNumber(value) {
+-      return typeof value == 'number' ||
+-        (isObjectLike(value) && baseGetTag(value) == numberTag);
++      // return typeof value == 'number' ||
++      //   (isObjectLike(value) && baseGetTag(value) == numberTag);
++      return true
+     }
+ 
+     /**

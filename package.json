@@ -6,6 +6,13 @@
   "author": "weineel",
   "license": "MIT",
   "private": true,
+  "scripts": {
+    "postinstall": "patch-package"
+  },
+  "devDependencies": {
+    "patch-package": "^6.4.7",
+    "postinstall-postinstall": "^2.1.0"
+  },
   "dependencies": {
     "lodash": "^4.17.21"
   }
