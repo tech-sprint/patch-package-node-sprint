@@ -1,0 +1,12 @@
+{
+  "name": "patch-package-node",
+  "version": "1.0.0",
+  "description": "test patch-package",
+  "main": "src/index.js",
+  "author": "weineel",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
