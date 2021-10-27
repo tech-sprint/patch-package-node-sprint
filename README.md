@@ -28,7 +28,7 @@ npm i --save-dev patch-package
 2. 使用 patch-package 创建补丁文（默认在 patches/* 下）。
 
 ```shell
-## some-package 是要修复包的保命，本示例项目用的 lodash（即 npx patch-package lodash）
+# some-package 是要修复包的包名，本示例项目用的 lodash（即 npx patch-package lodash）
 npx patch-package <some-package>
 ```
 
@@ -39,6 +39,6 @@ npx patch-package <some-package>
 ```shell
 # 因为 package.json 配置了 "postinstall": "patch-package", 在 yarn 或 npm install 完成后会自动应用。
 
-# 手动应用所有 patches
+# 手动应用所有 patches(对已经执行过 yarn 的项目，不会触发 postinstall 时)
 npx patch-package
 ```
